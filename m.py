@@ -100,7 +100,7 @@ def log(message):
 		status=reaa.split('"')[0]
 		if 'Your card was declined' in respone:
 			aa = '22'
-			#bot.send_message(message.chat.id,f"<strong>❌❌NO❌❌\n------------------------------------------\nCard: {rs}\nResponse -» {status}\nBy -» Mohammed Elmoslemany\n------------------------------------------</strong>",parse_mode="html")
+			bot.send_message(message.chat.id,f"<strong>❌❌NO❌❌\n------------------------------------------\nCard: {rs}\nResponse -» {status}\nBy -» Mohammed Elmoslemany\n------------------------------------------</strong>",parse_mode="html")
 	#		b += 1
 		elif 'Your card has insufficient funds.' in respone:
 			bot.send_message(message.chat.id,f"<strong>❌ Not Charge\n------------------------------------------\nCard: {rs}\nResponse -» {status}\nBy -» Mohammed Elmoslemany\n------------------------------------------</strong>",parse_mode="html")
